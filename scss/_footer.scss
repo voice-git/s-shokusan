@@ -1,0 +1,124 @@
+
+.link_area {
+  margin: 136px auto;
+  @include MQ(sm) {
+    margin: 60px auto;
+  }
+
+  .link_area_inr {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+    ul {
+      @include flex;
+      @include flex-wrap;
+      margin-left: -15px;
+      @include MQ(sm) {
+        margin-left: 0;
+      }
+
+      li {
+        width: -webkit-calc(50% - 15px);
+        width: calc(50% - 15px);
+        margin-left: 15px;
+        margin-bottom: 15px;
+        @include MQ(sm) {
+          width: 100%;
+          margin-left: 0;
+        }
+
+
+        a {
+          display: block;
+          font-size: 2.3rem;
+          font-weight: bold;
+          padding: 68px 20px;
+          text-align: center;
+          color: #fff;
+          letter-spacing: 0.15em;
+
+          span {
+            display: block;
+            font-size: 1.9rem;
+
+            &:after {
+              content: '';
+              display: block;
+              margin: 10px auto;
+              width: 20px;
+              height: 2px;
+              background: #fff;
+            }
+          }
+        }
+
+        &.btn_company {
+          background: url("../images/top/btn_company.jpg") center no-repeat;
+          background-size: cover;
+        }
+
+        &.btn_information {
+          background: url("../images/top/btn_information.jpg") center no-repeat;
+          background-size: cover;
+        }
+
+        &.btn_recruite {
+          background: url("../images/top/btn_recruite.jpg") center no-repeat;
+          background-size: cover;
+        }
+
+        &.btn_contact {
+          background: url("../images/top/btn_contact.jpg") center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+
+.footer{
+  border-top: 2px solid $color-red;
+  margin-top: 136px;
+  @include MQ(sm) {
+    margin-top: 60px;
+  }
+  .retop{
+    width: 57px;
+    margin: -28px auto 0;
+    @include MQ(sm) {
+      width: 30px;
+      margin: -15px auto 0;
+    }
+    a{
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .footer_inr{
+    text-align: center;
+    padding-bottom: 50px;
+    .footer_logo{
+      text-align: center;
+      margin: 40px auto 20px;
+      img{
+        width: 208px;
+        @include MQ(sm) {
+          width: 40%;
+        }
+      }
+    }
+
+    .copyright{
+      font-size: 1.2rem;
+      font-family: $tit_font;
+      @include MQ(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

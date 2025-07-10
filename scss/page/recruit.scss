@@ -1,0 +1,214 @@
+// compileExpanded: ../../recruit/css/recruit.css
+@import '../setting';
+
+.section_01 {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+
+  .reed {
+    text-align: center;
+    margin-bottom: 55px;
+
+    strong {
+      display: inline-block;
+      color: $color-red;
+      border-top: 2px solid $color-red;
+      border-bottom: 2px solid $color-red;
+      font-size: 2.2rem;
+      padding: 15px 35px;
+      margin-bottom: 30px;
+      line-height: 1.7;
+      @include MQ(sm) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 2.2;
+      @include MQ(sm) {
+        // text-align: left;
+      }
+    }
+  }
+
+  .img_piece {}
+}
+
+.section_02 {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+
+  .section_02_inr {
+    background-image: linear-gradient(-45deg, #ffffff 25%, #fad7d7 25%, #fad7d7 50%, #ffffff 50%, #ffffff 75%, #fad7d7 75%, #fad7d7);
+    background-size: 6px 6px;
+    padding: 70px 40px;
+    text-align: center;
+
+    .block {
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .title {
+        color: $color-red;
+
+        p {
+          width: 72px;
+          margin: 0 auto 10px;
+        }
+
+        h3 {
+          font-size: 2.6rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          @include MQ(sm) {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      p {
+        font-size: 2.6rem;
+        font-weight: bold;
+        line-height: 1.9;
+        @include MQ(sm) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+.section_03 {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+
+  .message_title {
+    @include flex;
+    @include flex-wrap;
+    @include flex-reverse;
+    margin-bottom: 55px;
+    @include MQ(sm) {
+      margin: 0 -20px 55px;
+    }
+
+    .img {
+      width: 50%;
+      @include MQ(sm) {
+        width: 100%;
+      }
+    }
+
+    .txt {
+      @include flex;
+      @include flex-wrap;
+      @include flex-align;
+      width: 50%;
+      background: $color-red;
+      padding: 50px;
+      color: #fff;
+      @include MQ(sm) {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .en {
+        width: 100%;
+        font-size: 1.4rem;
+        font-family: $tit_font;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 3rem;
+        @include MQ(sm) {
+          font-size: 1.8rem;
+          margin: 0.5em;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          margin: 0.6em 0 0.8em;
+          width: 22px;
+          height: 2px;
+          background: #fff;
+          @include MQ(sm) {
+            display: none;
+          }
+        }
+      }
+
+      .president {
+        width: 100%;
+
+        h4 {
+          font-size: 3rem;
+          @include MQ(sm) {
+            font-size: 2rem;
+          }
+
+          span {
+            font-size: 1.4rem;
+            padding-left: 10px;
+            @include MQ(sm) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .message_inr {
+    margin-bottom: 50px;
+
+    h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
+    p {
+      line-height: 2;
+    }
+  }
+
+  .btn_contact {
+    background-image: linear-gradient(-45deg, #b40000 25%, #c43838 25%, #c43838 50%, #b40000 50%, #b40000 75%, #c43838 75%, #c43838);
+    background-size: 6px 6px;
+    text-align: center;
+    margin-top: 90px;
+    @include MQ(sm) {
+      text-align: left;
+    }
+
+    a {
+      display: block;
+      padding: 45px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 0.15em;
+      background: url("../../images/common/ico_btn.png") right 40px center no-repeat;
+      background-size: 14px;
+      @include MQ(sm) {
+        font-size: 1.4rem;
+        padding: 25px 20px;
+        background: url("../../images/common/ico_btn.png") right 20px center no-repeat;
+        background-size: 11px;
+      }
+    }
+  }
+}

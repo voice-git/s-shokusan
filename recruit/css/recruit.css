@@ -1,0 +1,248 @@
+.section_01 {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+}
+
+.section_01 .reed {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section_01 .reed strong {
+  display: inline-block;
+  color: #c81e14;
+  border-top: 2px solid #c81e14;
+  border-bottom: 2px solid #c81e14;
+  font-size: 2.2rem;
+  padding: 15px 35px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 767px) {
+  .section_01 .reed strong {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.section_01 .reed p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.2;
+}
+
+.section_02 {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+}
+
+.section_02 .section_02_inr {
+  background-image: linear-gradient(-45deg, #ffffff 25%, #fad7d7 25%, #fad7d7 50%, #ffffff 50%, #ffffff 75%, #fad7d7 75%, #fad7d7);
+  background-size: 6px 6px;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.section_02 .section_02_inr .block {
+  margin-bottom: 45px;
+}
+
+.section_02 .section_02_inr .block:last-child {
+  margin-bottom: 0;
+}
+
+.section_02 .section_02_inr .block .title {
+  color: #c81e14;
+}
+
+.section_02 .section_02_inr .block .title p {
+  width: 72px;
+  margin: 0 auto 10px;
+}
+
+.section_02 .section_02_inr .block .title h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_02 .section_02_inr .block .title h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+}
+
+.section_02 .section_02_inr .block p {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.9;
+}
+
+@media screen and (max-width: 767px) {
+  .section_02 .section_02_inr .block p {
+    font-size: 1.8rem;
+  }
+}
+
+.section_03 {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+}
+
+.section_03 .message_title {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title {
+    margin: 0 -20px 55px;
+  }
+}
+
+.section_03 .message_title .img {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .img {
+    width: 100%;
+  }
+}
+
+.section_03 .message_title .txt {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 50%;
+  background: #c81e14;
+  padding: 50px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .txt {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.section_03 .message_title .txt .en {
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section_03 .message_title .txt h3 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .txt h3 {
+    font-size: 1.8rem;
+    margin: 0.5em;
+  }
+}
+
+.section_03 .message_title .txt h3:after {
+  content: '';
+  display: block;
+  margin: 0.6em 0 0.8em;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .txt h3:after {
+    display: none;
+  }
+}
+
+.section_03 .message_title .txt .president {
+  width: 100%;
+}
+
+.section_03 .message_title .txt .president h4 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .txt .president h4 {
+    font-size: 2rem;
+  }
+}
+
+.section_03 .message_title .txt .president h4 span {
+  font-size: 1.4rem;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .message_title .txt .president h4 span {
+    font-size: 1.2rem;
+  }
+}
+
+.section_03 .message_inr {
+  margin-bottom: 50px;
+}
+
+.section_03 .message_inr h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.section_03 .message_inr p {
+  line-height: 2;
+}
+
+.section_03 .btn_contact {
+  background-image: linear-gradient(-45deg, #b40000 25%, #c43838 25%, #c43838 50%, #b40000 50%, #b40000 75%, #c43838 75%, #c43838);
+  background-size: 6px 6px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .btn_contact {
+    text-align: left;
+  }
+}
+
+.section_03 .btn_contact a {
+  display: block;
+  padding: 45px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.15em;
+  background: url("../../images/common/ico_btn.png") right 40px center no-repeat;
+  background-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_03 .btn_contact a {
+    font-size: 1.4rem;
+    padding: 25px 20px;
+    background: url("../../images/common/ico_btn.png") right 20px center no-repeat;
+    background-size: 11px;
+  }
+}

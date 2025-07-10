@@ -1,0 +1,346 @@
+.section {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.reed {
+  color: #c81e14;
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .reed {
+    margin-bottom: 60px;
+  }
+}
+
+.contact_reed {
+  text-align: center;
+  font-weight: bold;
+  color: #c81e14;
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_reed {
+    margin-bottom: 60px;
+  }
+}
+
+.mailform dl {
+  margin-bottom: 37px;
+}
+
+.mailform dl dt {
+  margin-bottom: 8px;
+}
+
+.mailform dl dt span {
+  color: #c81e14;
+  margin-left: 3px;
+}
+
+.mailform .kubun {
+  padding: 35px 0;
+  border-top: 1px solid #c81e14;
+  border-bottom: 1px solid #c81e14;
+}
+
+.mailform .houhou {
+  margin: 50px 0;
+}
+
+.mailform .houhou,
+.mailform .kubun {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mailform .houhou dt,
+.mailform .kubun dt {
+  width: 30% !important;
+}
+
+@media screen and (max-width: 767px) {
+
+  .mailform .houhou dt,
+  .mailform .kubun dt {
+    width: 100% !important;
+  }
+}
+
+.mailform .houhou dt span,
+.mailform .kubun dt span {
+  color: #c81e14;
+}
+
+@media screen and (max-width: 767px) {
+
+  .mailform .houhou dd,
+  .mailform .kubun dd {
+    width: 100% !important;
+  }
+}
+
+.mailform .houhou label {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.mailform .kubun label {
+  display: block;
+  margin-bottom: -12px;
+}
+
+.mailform .houhou label input,
+.mailform .kubun label input {
+  margin-right: 5px;
+}
+
+.mailform .text_input {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mailform .text_input .example {
+  color: #999;
+  width: 25%;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .mailform .text_input .example {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+}
+
+.mailform .text_input input,
+.mailform .text_input textarea {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.mailform .text_input input {
+  width: 75% !important;
+  padding: 12px;
+  border: none;
+  background: #f5d6d4 !important;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .mailform .text_input input {
+    width: 100% !important;
+  }
+}
+
+.mailform .text_input input:focus {
+  background: #fff;
+  border: 1px solid #c81e14;
+}
+
+.mailform .text_input textarea {
+  width: 100% !important;
+  min-height: 144px;
+  padding: 12px;
+  background: #f5d6d4 !important;
+  border: 1px solid #ccc;
+}
+
+.mailform .text_input textarea:focus {
+  background: #fff;
+  border: 1px solid #c81e14;
+}
+
+.mailform .buttons ul {
+  text-align: center;
+}
+
+.mailform .buttons ul li {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .mailform .buttons ul li {
+    width: 49%;
+  }
+}
+
+.mailform .buttons ul li button {
+  width: 180px;
+  padding: 16px 10px;
+  border-radius: none;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #c81e14;
+  border: none;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .mailform .buttons ul li button {
+    width: 100%;
+  }
+}
+
+.mailform .buttons ul li button:hover {
+  opacity: 0.6;
+}
+
+.mailform .buttons ul .reset {
+  background-size: 13px 8px;
+}
+
+.mailform .buttons ul .submit {
+  background-size: 13px 8px;
+}
+
+.mailform .doui {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.mailform .doui a {
+  color: #c81e14;
+}
+
+.thanks {
+  margin: 50px auto 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .thanks {
+    margin-bottom: 60px;
+  }
+}
+
+.thanks p {
+  margin-bottom: 35px;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.thanks_btn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.thanks_btn a {
+  padding: 16px 40px;
+  border-radius: none;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #c81e14;
+  border: none;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .thanks_btn a {
+    width: 100%;
+  }
+}
+
+.thanks_btn a:hover {
+  opacity: 0.6;
+}
+
+.policy dl {
+  margin-bottom: 50px;
+}
+
+.policy dl dt {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #c81e14;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.policy dl dd {
+  font-size: 1.4rem;
+  line-height: 1.9;
+}
+
+.policy dl dd ul {
+  margin-top: 15px;
+}
+
+.policy .address {
+  background: #c81e14;
+  max-width: 515px;
+  width: 100%;
+  margin: auto;
+  padding: 35px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .policy .address {
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    padding: 20px;
+  }
+}
+
+.policy .address .address_inr {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .policy .address .address_inr {
+    margin: 0;
+  }
+}
+
+.policy .address .address_inr p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .policy .address .address_inr p {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.policy .address .address_inr h4 {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .policy .address .address_inr h4 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+} 

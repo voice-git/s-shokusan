@@ -1,0 +1,282 @@
+// compileExpanded: ../../contact/css/contact.css
+@import '../setting';
+
+.section {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.reed {
+  color: $color-red;
+  line-height: 2;
+  margin-bottom: 100px;
+  @include MQ(sm) {
+    margin-bottom: 60px;
+  }
+}
+
+.contact_reed {
+  text-align: center;
+  font-weight: bold;
+  color: $color-red;
+  line-height: 2;
+  margin-bottom: 100px;
+  @include MQ(sm) {
+    margin-bottom: 60px;
+  }
+}
+
+.mailform {
+  dl {
+    margin-bottom: 37px;
+
+    dt {
+      margin-bottom: 8px;
+
+      span {
+        color: $color-red;
+        margin-left: 3px;
+      }
+    }
+
+    dd {}
+  }
+
+  .kubun {
+    padding: 35px 0;
+    border-top: 1px solid $color-red;
+    border-bottom: 1px solid $color-red;
+  }
+
+  .houhou {
+    margin: 50px 0;
+  }
+
+  .houhou,
+  .kubun {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    dt {
+      width: 30% !important;
+      @include MQ(sm) {
+        width: 100% !important;
+      }
+      span{
+        color: $color-red;
+      }
+    }
+
+    dd {
+      @include MQ(sm) {
+        width: 100% !important;
+      }
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 30px;
+
+      input {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .text_input {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+
+    .example {
+      color: #999;
+      width: 25%;
+      padding-left: 20px;
+      font-size: 1.2rem;
+      @include MQ(sm) {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 5px;
+      }
+    }
+
+    input,
+    textarea {
+      @include transition;
+    }
+
+    input {
+      width: 75% !important;
+      padding: 12px;
+      border: none;
+      background: #f5d6d4 !important;
+      border: 1px solid #ccc;
+      @include MQ(sm) {
+        width: 100% !important;
+      }
+
+      &:focus {
+        background: #fff;
+        border: 1px solid $color-red;
+      }
+    }
+
+    textarea {
+      width: 100% !important;
+      min-height: 144px;
+      padding: 12px;
+      background: #f5d6d4 !important;
+      border: 1px solid #ccc;
+
+      &:focus {
+        background: #fff;
+        border: 1px solid $color-red;
+      }
+    }
+  }
+
+  .buttons {
+    ul {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        @include MQ(sm) {
+          width: 49%;
+        }
+
+        button {
+          width: 180px;
+          padding: 16px 10px;
+          border-radius: none;
+          font-size: 1.6rem;
+          color: #fff;
+          background: $color-red;
+          border: none;
+          cursor: pointer;
+          @include MQ(sm) {
+            width: 100%;
+          }
+          @include transition;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .reset {
+        background-size: 13px 8px;
+      }
+
+      .submit {
+        background-size: 13px 8px;
+      }
+    }
+  }
+
+
+
+  .doui {
+    text-align: center;
+    margin: 60px 0;
+
+    a {
+      color: $color-red;
+    }
+  }
+}
+
+.thanks {
+  margin: 50px auto 120px;
+  @include MQ(sm) {
+    margin-bottom: 60px;
+  }
+
+  p {
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.2;
+  }
+}
+.thanks_btn {
+  margin-top: 60px;
+  text-align: center;
+
+  a {
+    padding: 16px 40px;
+    border-radius: none;
+    font-size: 1.6rem;
+    color: #fff;
+    background: $color-red;
+    border: none;
+    cursor: pointer;
+    @include MQ(sm) {
+      width: 100%;
+    }
+    @include transition;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.policy {
+  dl {
+    margin-bottom: 50px;
+
+    dt {
+      font-size: 1.8rem;
+      border-bottom: 1px solid $color-red;
+      font-weight: bold;
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    dd {
+      font-size: 1.4rem;
+      line-height: 1.9;
+
+      ul {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .address {
+    background: $color-red;
+    max-width: 515px;
+    width: 100%;
+    margin: auto;
+    padding: 35px;
+    color: #fff;
+    @include MQ(sm) {
+      width: -webkit-calc(100% + 40px);
+      width: calc(100% + 40px);
+      margin: 0 -20px;
+      padding: 20px;
+    }
+
+    .address_inr {
+      @include flex;
+      @include flex-wrap;
+
+      p {
+        font-size: 1.4rem;
+        padding-left: 20px;
+        @include MQ(sm) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

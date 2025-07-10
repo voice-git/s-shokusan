@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.312" height="43.393" viewBox="0 0 64.312 43.393">
+  <g id="グループ_62" data-name="グループ 62" transform="translate(-1049.5 -442.803)">
+    <g id="レイヤー_1" data-name="レイヤー 1">
+      <line id="線_13" data-name="線 13" x2="35.319" transform="translate(1063.997 485.197)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g id="レイヤー_2" data-name="レイヤー 2">
+      <g id="グループ_26" data-name="グループ 26">
+        <path id="パス_9" data-name="パス 9" d="M1051.421,444.724,1064,479.493h35.319l12.576-34.769" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="パス_10" data-name="パス 10" d="M1109.254,452.016s-5.791-4.312-12.081-4.312c-6.918,0-6.541,5.493-15.517,5.493s-8.6-5.493-15.516-5.493c-6.29,0-12.082,4.312-12.082,4.312" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <g id="グループ_25" data-name="グループ 25">
+          <path id="パス_11" data-name="パス 11" d="M1079.629,471.05v2.02h-2.5v-2.02h-5.821v-2.461l4.881-9.762h2.84l-4.881,9.762h2.981v-2.66h2.5v2.66h1.3v2.461Z"/>
+          <path id="パス_12" data-name="パス 12" d="M1086.988,473.19a4.108,4.108,0,0,1-4.341-4.241v-6a4.332,4.332,0,0,1,8.662,0v6A4.092,4.092,0,0,1,1086.988,473.19Zm1.72-10.2a1.741,1.741,0,1,0-3.46,0v5.941a1.739,1.739,0,1,0,3.46,0Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

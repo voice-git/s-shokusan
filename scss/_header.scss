@@ -1,0 +1,42 @@
+.header{
+  padding: 70px 0 45px;
+  background: $color-bg;
+  @include MQ(sm) {
+    padding: 25px 0 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .header_logo{
+    text-align: center;
+    margin: 0 auto 60px;
+    @include MQ(sm) {
+      margin-bottom: 0;
+    }
+    img{
+      width: 308px;
+      @include MQ(sm) {
+        width: 40%;
+      }
+    }
+  }
+}
+
+/*head-change*/
+#head-change {
+  display: none;
+  background: #fff;
+  position: fixed;
+  border-bottom: 1px solid #eeeeee;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  padding: 20px;
+
+}

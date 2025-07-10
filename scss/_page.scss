@@ -1,0 +1,88 @@
+
+#main{
+  @include MQ(sm) {
+    margin-top: 86px;
+  }
+}
+
+
+// section
+.section {
+  margin: 0 auto;
+  padding: 136px 20px 0;
+  @include MQ(sm) {
+    margin: 0 auto;
+    padding: 60px 20px 0;
+  }
+
+  .section_title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include MQ(sm) {
+    margin-bottom: 30px;
+    }
+
+    .ico_peace_01 {
+      width: 68px;
+      @include MQ(sm) {
+        width: 38px;
+      }
+    }
+
+    .ico_peace_02 {
+      width: 50px;
+      @include MQ(sm) {
+        width: 30px;
+      }
+    }
+
+    .ico_peace_03 {
+      width: 50px;
+      @include MQ(sm) {
+        width: 30px;
+      }
+    }
+
+    h2 {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+      margin: 36px auto 0;
+      @include MQ(sm) {
+        font-size: 2.6rem;
+        margin: 20px auto 0;
+      }
+
+      &.border_end {
+        &:after {
+          content: '';
+          display: block;
+          margin: 0.6em auto 0.8em;
+          width: 34px;
+          height: 3px;
+          background: #000;
+        }
+      }
+    }
+
+    .en {
+      font-size: 1.6rem;
+      color: $color-red;
+      letter-spacing: 0.3em;
+      margin-top: 15px;
+      font-family: $tit_font;
+      font-weight: bold;
+      @include MQ(sm) {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+    }
+
+    .reed {
+      p {
+        line-height: 2;
+      }
+    }
+  }
+}

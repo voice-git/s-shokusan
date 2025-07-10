@@ -1,0 +1,340 @@
+// compileExpanded: ../../company/css/company.css
+@import '../setting';
+
+.section {
+  max-width: 1025px;
+  width: 100%;
+  margin: auto;
+  @include MQ(sm) {
+    margin: -60px auto 0;
+    padding: 120px 20px 0;
+  }
+}
+
+.section_01_inr {
+  position: relative;
+  margin-bottom: 80px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include MQ(sm) {
+    margin-bottom: 60px;
+  }
+
+  .point_01 {
+    position: absolute;
+    top: -45px;
+    left: -45px;
+    width: 190px;
+    @include MQ(sm) {
+      top: 0;
+      left: 0;
+      width: 90px;
+    }
+  }
+
+  .point_02 {
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    width: 185px;
+    @include MQ(sm) {
+      top: 0;
+      left: 0;
+      width: 90px;
+    }
+  }
+
+  .point_03 {
+    position: absolute;
+    top: -75px;
+    left: -30px;
+    width: 141px;
+    @include MQ(sm) {
+      top: 0;
+      left: 15px;
+      width: 65px;
+    }
+  }
+
+  .point_04 {
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    width: 185px;
+    @include MQ(sm) {
+      top: 0;
+      left: 0;
+      width: 90px;
+    }
+  }
+
+  .img {
+    width: 57%;
+    @include MQ(sm) {
+      width: -webkit-calc(100% + 40px);
+      width: calc(100% + 40px);
+      margin: 0 -20px 30px;
+    }
+  }
+
+  .txt {
+    width: 43%;
+    @include flex;
+    @include flex-wrap;
+    @include flex-align;
+    @include MQ(sm) {
+      width: 100%;
+    }
+
+    .en {
+      color: $color-red;
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-family: $tit_font;
+      @include MQ(sm) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+
+    h3 {
+      color: $color-red;
+      font-size: 3rem;
+      margin: 0.6em 0;
+      font-weight: bold;
+      @include MQ(sm) {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    P {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+  }
+
+  &.row_01 {
+    @include flex;
+    @include flex-wrap;
+
+    .txt {
+      padding-left: 60px;
+      @include MQ(sm) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &.row_02 {
+    @include flex;
+    @include flex-wrap;
+    @include flex-reverse;
+
+    .txt {
+      padding-right: 50px;
+      @include MQ(sm) {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.section_02 {
+  .main {
+    margin-bottom: 60px;
+  }
+
+  .section_02_inr {
+    max-width: 805px;
+    width: 100%;
+    margin: 30px auto;
+    @include flex;
+    @include flex-wrap;
+    @include MQ(sm) {
+      margin-bottom: 60px;
+    }
+
+    .img {
+      width: 285px;
+      @include MQ(sm) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .txt {
+      width: -webkit-calc(100% - 285px);
+      width: calc(100% - 285px);
+      padding-left: 35px;
+      @include MQ(sm) {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      h3 {
+        color: $color-red;
+        font-size: 3rem;
+        margin: 0 0 0.6em;
+        font-weight: bold;
+        @include MQ(sm) {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: .3em;
+        }
+      }
+
+      strong {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        @include MQ(sm) {
+          font-size: 1.8rem;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+
+      P {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: justify;
+        text-justify: inter-ideograph;
+        line-height: 2;
+      }
+    }
+  }
+
+  table {
+    max-width: 805px;
+    width: 100%;
+    margin: 130px auto 0;
+    background: #fcf4f3;
+    font-size: 1.8rem;
+    @include MQ(sm) {
+      border-top: 1px solid $color-red;
+      border-right: 1px solid $color-red;
+      margin-top: 60px;
+    }
+
+    tr {
+      border: 1px solid $color-red;
+      @include MQ(sm) {
+        border: none;
+      }
+    }
+
+    th {
+      padding: 35px;
+      border-left: 10px solid $color-red;
+      @include MQ(sm) {
+        padding: 20px;
+        display: inline-block;
+        width: 65%;
+        border-bottom: 1px solid $color-red;
+      }
+    }
+
+    td {
+      padding: 35px;
+      text-align: right;
+      @include MQ(sm) {
+        padding: 20px;
+        display: inline-block;
+        width: 35%;
+        border-bottom: 1px solid $color-red;
+      }
+    }
+  }
+}
+
+.section_03 {
+  .info_row {
+    @include flex;
+    @include flex-wrap;
+    @include MQ(sm) {
+      padding: 20px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    .en {
+      width: 220px;
+      padding: 35px 0;
+      border-bottom: 1px solid $color-red;
+      color: $color-red;
+      margin-right: 35px;
+      @include MQ(sm) {
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: none;
+        margin-right: 0;
+      }
+    }
+
+    .jp {
+      width: 130px;
+      padding: 35px 0;
+      border-bottom: 1px solid $color-red;
+      color: $color-red;
+      margin-right: 35px;
+      @include MQ(sm) {
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: none;
+        margin-right: 0;
+      }
+    }
+
+    .inr {
+      width: -webkit-calc(100% - 420px);
+      width: calc(100% - 420px);
+      padding: 35px 0;
+      border-bottom: 1px solid #cdcdcd;
+      @include MQ(sm) {
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: none;
+      }
+
+      a {
+        float: right;
+        background: $color-red;
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 5px 35px;
+        @include MQ(sm) {
+          float: none;
+          display: block;
+          margin-top: 20px;
+          padding: 15px 35px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .info_row_top {
+    @include MQ(sm) {
+      padding: 20px;
+      border-top: 1px solid #cdcdcd;
+    }
+    @include MQ(min-sm) {
+      .en {
+        border-top: 1px solid $color-red;
+      }
+
+      .jp {
+        width: 130px;
+        border-top: 1px solid $color-red;
+      }
+
+      .inr {
+        border-top: 1px solid #cdcdcd;
+      }
+    }
+  }
+}

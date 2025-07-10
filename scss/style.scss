@@ -1,0 +1,114 @@
+// compileExpanded: ../css/style.css
+/*---font------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+/*---base------------------------------------------------------------------*/
+@import "_setting.scss";
+@import "_reset.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fonts;
+  font-size: $fs-md;
+  line-height: $lh-md;
+  letter-spacing: $ls-md;
+  color: $color-base;
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  background: $color-bg url(../images/common/bg_body.jpg);
+  @include MQ(sm) {
+    background-size: 1200px;
+  }
+
+}
+
+a {
+  color: $color-base;
+  text-decoration: none;
+  @include transition;
+
+  &:hover {
+    opacity: 0.5;
+    color: $color-base;
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+/* all
+---------------------------------------------------------------------------------------*/
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.pc_only {
+  @include MQ(sm) {
+    display: none !important;
+  }
+}
+
+.sp_only {
+  @include MQ(min-sm) {
+    display: none !important;
+  }
+}
+
+/* animate
+---------------------------------------------------------------------------------------*/
+@import "_animate.scss";
+/* header
+---------------------------------------------------------------------------------------*/
+@import "_header.scss";
+/* nav
+---------------------------------------------------------------------------------------*/
+@import "_nav.scss";
+/* page
+---------------------------------------------------------------------------------------*/
+@import "_page.scss";
+/* footer
+---------------------------------------------------------------------------------------*/
+@import "_footer.scss";
+
+/* colorbox
+---------------------------------------------------------------------------------------*/
+@import "_colorbox.scss";
+/* clearfix
+---------------------------------------------------------------------------------------*/
+.clr:after {
+  content: " ";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clr {
+  display: inline-block;
+  min-height: 1%;
+}
+/* Hides from IE-mac \*/
+* html .clr {
+  height: 1%;
+}
+
+.clr {
+  display: block;
+}

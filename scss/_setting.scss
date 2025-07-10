@@ -1,0 +1,114 @@
+@charset "utf-8"; // breakpoint
+$medium: 1000px;
+$small: 768px;
+$xsmall: 421px;
+@mixin MQ($media-list...) {
+  @if index($media-list, md) {
+    @media screen and (max-width: $medium - 1) {
+      @content;
+    }
+  }
+  @if index($media-list, sm) {
+    @media screen and (max-width: $small - 1) {
+      @content;
+    }
+  }
+  @if index($media-list, xs) {
+    @media screen and (max-width: $xsmall - 1) {
+      @content;
+    }
+  }
+  @if index($media-list, min-md) {
+    @media screen and (min-width: $medium) {
+      @content;
+    }
+  }
+  @if index($media-list, min-sm) {
+    @media screen and (min-width: $small) {
+      @content;
+    }
+  }
+}
+// transition
+@mixin transition {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+// Typography
+$fonts: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$fonts_serif: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+$tit_font: 'Montserrat', sans-serif;
+$noto_suns: "Noto Sans Japanese";
+
+$fs-xl: 2.6rem;
+$fs-lg: 2rem;
+$fs-md: 1.6rem;
+$fs-sm: 1.2rem;
+$fs-xl: 1.0rem; // line-height
+$lh-lg: 2.75;
+$lh-md: 1.6;
+$lh-sm: 1.4;
+$lh-xl: 1.2; // letter-spacing
+$ls-lg: 0.1em;
+$ls-md: 0.06em;
+$ls-sm: 0.02em; // color
+$color-bg: #fff;
+$color-base: #000;
+$color-red: #c81e14;
+
+// width
+$width-md: 980px;
+$width-sm: 768px; // flexbox
+@mixin flex {
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-reverse {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+@mixin flex-wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+// 右揃え
+@mixin flex-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+// 左右中央
+@mixin flex-justify {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+// 上下中央
+@mixin flex-align {
+  -webkit-align-items: center;
+  align-items: center;
+}
+// 下揃え
+@mixin flex-alignend {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+// 両はし揃え
+@mixin flex-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+// 均等揃え
+@mixin flex-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+// 天地中央配置
+@mixin flex-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

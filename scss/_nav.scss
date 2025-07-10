@@ -1,0 +1,145 @@
+/*!------------------------------------*
+nav
+\*!------------------------------------*/
+.gnav {
+  max-width: 840px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+
+  ul {
+    @include flex;
+    @include flex-between;
+
+    li {
+      width: 100%;
+      font-size: 1.6rem;
+      text-align: center;
+      letter-spacing: 0.14em;
+      font-weight: bold;
+      @include MQ(min-sm) {
+        line-height: 1;
+        border-left: 1px solid $color-base;
+        &:last-child{
+          border-right: 1px solid $color-base;
+        }
+      }
+      a{
+        display: block;
+      }
+      span {
+        display: block;
+        font-size: 1.2rem;
+        color: $color-red;
+        margin-top: 10px;
+        font-family: $tit_font;
+      }
+    }
+  }
+  @include MQ(sm) {
+    display: none;
+    position: fixed;
+    top: 88px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+
+    ul {
+      @include flex;
+      @include flex-wrap;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      margin-top: 40px
+    }
+
+    li {
+      margin: 12px 0;
+    }
+  }
+}
+@include MQ(sm) {
+  .menu {
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    z-index: 2;
+
+    .line {
+      position: relative;
+      width: 30px;
+      height: 26px;
+      display: block;
+      margin-right: 0;
+
+      .menu-line {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: #000;
+
+        &:first-of-type {
+          top: 0;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+
+        &:nth-of-type(2) {
+          top: 10px;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+
+        &:nth-of-type(3) {
+          top: 20px;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    &.active {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+
+      .menu-line {
+        background: #000;
+
+        &:first-of-type {
+          top: 10px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+
+        &:nth-of-type(2) {
+          display: none;
+        }
+
+        &:nth-of-type(3) {
+          top: 10px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.gnav.active {
+  display: block !important;
+  // visibility: visible !important;
+}
